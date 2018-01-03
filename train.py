@@ -20,10 +20,8 @@ with tf.Session(config=config) as sess:
         # GAN object
         gan = SimpleGAN()
 
-
         # Define Training procedures of Generator
         G_global_step = tf.Variable(0, name="G_global_step", trainable=True)
-
         G_optimizer = tf.train.AdamOptimizer(learning_rate=0.001)
         G_grads_and_vars = G_optimizer.compute_gradients(gan.G_loss, var_list=gan.G_vars)
         G_train_op = G_optimizer.apply_gradients(G_grads_and_vars, global_step=G_global_step)
