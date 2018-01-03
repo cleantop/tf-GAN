@@ -21,13 +21,13 @@ class SimpleGAN(object):
 
         self.D_vars = [self.D_w1, self.D_b1, self.D_w2, self.D_b2]
 
-
         # Random noise setting for Generator
         self.z = tf.placeholder(tf.float32, shape=[None, 100])
 
         # Real image
         self.x = tf.placeholder(tf.float32, shape=[None, 784])
 
+        # Fake image
         self.G_sample = self.generator(self.z)
 
         D_real, D_logit_real = self.discriminator(self.x)
@@ -50,7 +50,6 @@ class SimpleGAN(object):
 
     # Determine that input is real or fake image
     def discriminator(self, x):
-
         # Image to hidden
         D_h1 = tf.nn.relu(tf.matmul(x, self.D_w1) + self.D_b1)
 
