@@ -37,7 +37,7 @@ class SimpleGAN(object):
         self.D_loss = -tf.reduce_mean(tf.log(D_real) + tf.log(1.0 - D_fake))
         self.G_loss = -tf.reduce_mean(tf.log(D_fake))
 
-    # Generate Fake image(28*28) from noise distribution
+    # Generate fake image(28*28) from noise distribution
     def generator(self, z):
         # Noise to hidden
         G_h1 = tf.nn.relu(tf.matmul(z, self.G_w1) + self.G_b1)
