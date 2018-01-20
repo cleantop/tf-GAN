@@ -22,6 +22,11 @@ Before running the code, you first locate your dataset-information in the train 
 <pre><code>python ./train_128.py</code></pre>
 
 ## Results
+1. MNIST
+![Alt text](/img/mnist.png)
+
+2. CelebA - with small training epochs
+![Alt text](/img/celeba.png)
 
 ## Reference
 1. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks (https://arxiv.org/abs/1511.06434)
