@@ -15,5 +15,8 @@ I implemented original GAN which consists of MLP-Based Generator and Discriminat
 
 ## Results
 
+1. MNIST
+![MNIST](./img/sample.png)
+
 ## Reference
 1. Generative Adversarial Networks (https://arxiv.org/abs/1406.2661)

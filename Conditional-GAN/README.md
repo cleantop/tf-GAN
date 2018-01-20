@@ -15,6 +15,11 @@ I implemented conditional GAN which consists of MLP-Based Generator and Discrimi
 <pre><code>python ./train.py</code></pre>
 
 ## Results
+1. MNIST-digit
+![MNIST](./img/sample_mnist.png)
+
+2. MNIST-fashion
+![Fashion](./img/sample_fashion_mnist.png)
 
 ## Reference
 1. Conditional Generative Adversarial Nets (https://arxiv.org/abs/1411.1784)
