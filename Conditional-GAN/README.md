@@ -1,4 +1,4 @@
-# Conditionalc-GAN
+# Conditional-GAN
 I implemented conditional GAN which consists of MLP-Based Generator and Discriminator, and each component has conditional variables as a input. For training dataset, I used digit-MNIST dataset and Fashion-MNIST. 
 
 ## Dataset
